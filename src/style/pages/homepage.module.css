@@ -1,0 +1,94 @@
+.container {
+	width: 100%;
+	height: 450px;
+	margin: 0 auto;
+	/* background-repeat: no-repeat;
+	background-size: cover;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 246, 230, 1) 20%,
+		rgba(255, 254, 110, 1) 80%
+	); */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
+}
+.main_container {
+	background-image: url("../../pexels-avonne-stalling-3916014.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+.text {
+	font-family: "Montserrat", sans-serif;
+	font-size: 42px;
+	color: white;
+	text-shadow: 2px 0px 2px rgba(150, 150, 150, 1);
+}
+
+.button_container {
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px 6px rgba(0, 0, 0, 0.75);
+	border-radius: 20px;
+}
+.button {
+	border: none;
+	background-color: transparent;
+	padding: 10px 30px;
+	border-radius: 30px;
+	color: white;
+	position: relative;
+	z-index: 10;
+}
+.button:hover {
+	text-decoration: underline;
+}
+.button_background {
+	background: rgb(140, 49, 28);
+	background: linear-gradient(
+		90deg,
+		rgba(140, 49, 28, 1) 0%,
+		rgba(166, 65, 28, 1) 35%,
+		rgba(191, 126, 69, 1) 100%
+	);
+
+	height: 650px;
+	width: 650px;
+	position: absolute;
+	top: 0px;
+	animation: moveGradient 4s linear alternate infinite;
+}
+@keyframes moveGradient {
+	0% {
+		top: 0px;
+		left: 0px;
+	}
+
+	100% {
+		left: -400px;
+		top: -400px;
+	}
+}
+
+@media (max-width: 625px) {
+	.text {
+		font-size: 32px;
+	}
+	.container {
+		justify-content: center;
+	}
+}
+@media (max-width: 480px) {
+	.text {
+		font-size: 26px;
+		text-align: center;
+	}
+}
+
+@media (max-height: 672px) {
+	.main_container {
+		min-height: 700px;
+	}
+}

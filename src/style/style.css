@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Montserrat:wght@600&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: "Lora", serif;
+	background-color: #f9f9f9;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.active {
+	color: #5d8aa6;
+	border-color: #5d8aa6;
+}

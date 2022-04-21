@@ -1,0 +1,10 @@
+.title {
+	text-align: center;
+}
+.content {
+	text-align: center;
+	padding: 20px;
+}
+.wrapper {
+	flex: 1 0 auto;
+}
